@@ -108,14 +108,19 @@ def loop():
   
   students = ["Norville", "Fred", "Velma", "Daphne"]
   
-  
+  for name in students :
+    print(f"Hello {name}")
   
   
   # For Loops Practice #2
   # Given the following list of numbers, calculate the sum of all the numbers using For loops and store the result of the sum in a variable called sum_numbers:
   
   list_numbers = [1,5,8,7,6,8,2,5,2,6,4,8,5,9,8,3,5,4,2,5,6,4]
-  # sum_numbers = 
+  sum_numbers = 0
+  for number in list_numbers:
+    # sum_numbers = 0 we put it outside so it doesn't repeat
+    sum_numbers = sum_numbers + number
+    print(f"sum of list_numbers is {sum_numbers}")
   
   
   
@@ -134,9 +139,18 @@ def loop():
   
   list_numbers = [1,5,8,7,6,8,2,5,2,6,4,8,5,9,8,3,5,4,2,5,6,4]
   
-  # sum_even = 
+  # sum_even = 0
   
-  # sum_odd = 
+  # sum_odd = 0
+
+  # for num in list_numbers:
+  #   if num % 2 == 0:
+  #     sum_even = sum_even + num
+  #   elif num % 2 ==1:
+  #     sum_odd = sum_odd + num
+  # print(f"evens are {sum_even}")
+  # print(f"odds are {sum_odd}")
+    
 
 
 
