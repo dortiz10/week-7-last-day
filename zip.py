@@ -1,7 +1,6 @@
-def zip():
+def zip1():
   # zip
-  # Notice the format enumerate actually returns, let's take a look by transforming it to a list()
-  # list(enumerate('abcde'))
+
   print("zip")
   
   
@@ -12,7 +11,8 @@ def zip():
   mylist2 = ['a','b','c','d','e']
   
   # This one is also a generator! We will explain this later, but for now let's transform it to a list
-  zip(mylist1,mylist2)
+  print(list(zip(mylist1,mylist2)))
+  
   
   
   # list(zip(mylist1,mylist2))
@@ -52,15 +52,20 @@ def zip():
   
   # Use the zip function, loops, and the following lists of countries and capitals to solve it quickly and efficiently.
   
-  # capitals = ["Berlin", "Tokyo", "Paris", "Helsinki", "Ottawa", "Canberra"]
-  # countries = ["Germany", "Japan", "France", "Finland", "Canada", "Australia"]
+  capitals = ["Berlin", "Tokyo", "Paris", "Helsinki", "Ottawa", "Canberra"]
+  countries = ["Germany", "Japan", "France", "Finland", "Canada", "Australia"]
   
+  for country, capital in zip(capitals,countries):
+    print(f"the capital of {capital} is {country}")
+  # print(list(zip(capitals,countries)))
   
   
   # Zip Practice #2
   # Create a zip object made up of lists, of a set of brands and products that you prefer, inside the my_zip variable.
-  # brands =
-  # products =
+  brands = ["Little ceasers", "Sony", "Dell"]
+  products = ["Pizza", "Playstation" ,"Monitor"]
+  for i, x in zip(brands,products):
+    print(f"The brand is {i} and the preffered product is {x}")
   
   
   # Zip Practice #3
