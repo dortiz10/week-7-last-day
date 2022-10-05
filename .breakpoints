@@ -1,3 +1,12 @@
 {
-  "files": {}
+  "files": {
+    "enumerators.py": [
+      {
+        "id": "9c9f7c60-3706-41a4-8119-8b2b4c68f0a9",
+        "line": 34,
+        "version": 151,
+        "index": 1094
+      }
+    ]
+  }
 }
